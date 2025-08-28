@@ -107,7 +107,7 @@ function start(id){
 
     // print handy /view url
     if (typeof addr !== 'string') {
-      console.log(`Go to viewer: http://localhost:${addr.port}/view`)
+      console.log(`Go to viewer: http://localhost:${addr.port}/examples/thesis`)
     }
   }
 }

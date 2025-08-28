@@ -1,0 +1,243 @@
+<!doctype html>
+<head>
+	<title>Threebox Object3D Example</title>
+	<link href="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css" rel="stylesheet">
+	<script src="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js"></script>
+	<script src="https://kit.fontawesome.com/4b890d1e63.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+	<script src="./threebox.js" type="text/javascript"></script>
+	<link href="./threebox.css" rel="stylesheet" />
+
+	<style>
+		body, html {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+        #sidebar {
+            width: 350+22px;
+			height: 100%;
+            flex-shrink: 0;
+			padding: 18px;	
+			background-color: rgba(255, 255, 255, 0.7);
+			position: absolute;
+   			z-index: 999; /* Ensure it's above the map container */		
+			overflow-y: auto; /* Enable vertical scrollbar if content overflows */
+        }
+
+		#container {
+            display: flex;
+			height: 100%;
+        }
+
+		#mapID {
+			width: 100%;
+			flex-grow: 1;
+			height: 100%;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="loader"></div> 
+	<div id="container">
+		<div id ="sidebar">
+			<button id="fly-to-BK-building">fly to BK building  <i class="fa-solid fa-plane"></i></button>
+
+
+			<div class="addcontainer">
+				<div class="titlebox">
+					<span class="title-line">- Add surrounding buildings</span>
+				</div>
+				<div class="dropdownbuilding">
+					<button id="add-building">Add new buildings <i class="fa-regular fa-building"></i></button>  
+					<div class="dropdownbuilding-content">
+						<a id="add-one"><img class="option-img" src="./1.jpg"> Type 1</a>
+						<a id="add-two"><img class="option-img" src="./2.jpg"> Type 2</a>
+						<a id="add-three"><img class="option-img" src="./3.jpg"> Type 3</a>
+					</div>
+				</div>
+				<div class="instructionbox">
+					<span class="instruction-line">unit: meter(m)</span>
+				</div>
+				<div class="slidecontainer">
+					<div style="position: relative;">
+						<input type="range" id="depth" name="depth" min="4" max="25" value="25" step="1" onchange="updateSliderValue('depthCurrentValue', this.value, this)">
+						<label class="tagname">Depth</label>
+						<br>
+						<span class="slider-min">4</span> 
+						<span class="slider-value" id="depthCurrentValue" style="left: calc(70% * 25 / 25);">Current: 25</span> 
+						<span class="slider-max">25</span> 
+					</div>
+					<div style="position: relative;">
+						<input type="range" id="width" name="width" min="4" max="70" value="25" step="1" onchange="updateSliderValue('widthCurrentValue', this.value, this)">
+						<label class="tagname">Width</label>
+						<br>
+						<span class="slider-min">4</span> 
+						<span class="slider-value" id="widthCurrentValue" style="left: calc(70% * 25 / 70);">Current: 25</span> 
+						<span class="slider-max">70</span> 
+					</div>
+					<div style="position: relative;">
+						<input type="range" id="height" name="height" min="4" max="50" value="25" step="1" onchange="updateSliderValue('heightCurrentValue', this.value, this)">
+						<label class="tagname">Height</label>
+						<br>
+						<span class="slider-min">4</span>
+						<span class="slider-value" id="heightCurrentValue" style="left: calc(70% * 25 / 50);">Current: 25</span> 
+						<span class="slider-max">50</span> 
+					</div>
+					<p></p>
+				</div>
+				<p></p>
+				<button id="apply-apply">Apply  <i class="fa-regular fa-circle-check"></i></button>
+				<div class="input-container">
+					<button id="remove-layer">Clean all added buildings  <i class="fa-regular fa-trash-can"></i></button>
+				</div>
+				<div class="button-container">
+					<button id="select-delete">Delete selected  <i class="fa-regular fa-rectangle-xmark"></i></button>
+				</div>
+			</div> 
+
+
+			<p></p>
+			<div class="addcontainer">
+				<div class="titlebox">
+					<span class="title-line">- Choose added builing material</span>
+				</div>
+				<div class="dropdown">
+					<button id="compute-rhino">Choose material (Default: Brick)  <i class="fa-regular fa-hand-pointer"></i></button>
+						<div class="dropdown-content">
+							<a id="material-1">Brick</a>
+							<a id="material-2">Transparent glass</a>
+							<a id="material-3">Metallic reflective glass</a>
+						</div>
+					<div id="material-result"></div>
+				</div>
+			</div>
+
+
+			<p></p>
+			<div class="addcontainer">
+				<div class="titlebox">
+					<span class="title-line">- Select room by name</span>
+				</div>
+
+				<div class="input-container">
+					<input list="roomNumbersList" id="roomChoice" name="roomChoice" placeholder="--- Query Room Name ---"/>
+					<datalist id="roomNumbersList">
+						<option style="display:none;" selected>Select language</option>
+						<option value="">All</option> <!-- Default option -->
+					</datalist>
+				</div>
+				<div class="button-container">
+					<button id="room-preview">Room Preview  <i class="fa-solid fa-magnifying-glass"></i></button>
+				</div>
+				<div class="instructionbox">
+					<span class="instruction-line">Select room or query by name. (Example: 01.Oost.330)</span>
+				</div>
+			</div>
+
+
+			<p></p>
+			<div class="addcontainer">
+				<div class="titlebox">
+					<span class="title-line">- Choose daylight metrics</span>
+				</div>
+				<div class="dropdown">
+					<button id="compute-rhino">Compute  <i class="fa-regular fa-share-from-square"></i></button>
+					<div class="dropdown-content">
+						<a id="option-1">Daylight Autonomy (DA)</a>
+						<a id="option-2">Spacial Daylight Autonomy (sDA)</a>
+						<a id="option-3">Useful Daylight Illuminance (UDI)</a>
+					</div>
+				</div>
+				<div class="slidecontainer">
+					<form>
+						<label class="eye-level">
+							<input type="radio" name="eyeLevel" value="0.8" checked> Sitting Eye Level (0.8m)
+						  </label>
+						<label class="eye-level">
+						  <input type="radio" name="eyeLevel" value="1.2"> Standing Eye Level (1.2m)
+						</label>
+					  </form>					  
+				</div>	
+			</div>
+			
+
+			<p></p>
+			<div class="addcontainer">
+				<div class="titlebox">
+					<span class="title-line">- Result</span>
+				</div>
+				<div id="pictureContainer">
+					<!-- Placeholder for the picture -->
+				</div>
+				<p id="resultMessage"> </p>
+				<p></p>
+			</div>
+			
+
+			<p></p>
+			<div class="addcontainer">
+				<div class="titlebox">
+					<span class="title-line">- Result Comparison</span>
+				</div>
+				<p id="comMessage"> </p>
+				<p></p>
+			</div>
+
+			<p></p>
+			<button id="help-help">help </button>
+			<button id="get-simulation-location">getsimulationlocation </button>
+			<button id="download">download </button>
+
+
+		</div>
+		<div id='mapID'>
+			<div class="mapboxgl-ctrl helpDiv">
+				<div id="help" class="help">
+					<p><kbd>Shift</kbd> + left click to <i class="fa-regular fa-hand"></i> Drag & Move</p>
+					<p><kbd>Alt</kbd> + left click to <i class="fa-solid fa-rotate-right"></i> Rotate </p>
+				</div>
+			</div>
+			<div id="menu" style="margin-left:120px">
+				<input id="streets-v11" type="radio" name="rtoggle" value="streets" checked="checked" />
+				<label for="streets-v11">streets</label>
+				<input id="light-v10" type="radio" name="rtoggle" value="light" />
+				<label for="light-v10">light</label>
+				<input id="dark-v10" type="radio" name="rtoggle" value="dark" />
+				<label for="dark-v10">dark</label>
+				<input id="outdoors-v11" type="radio" name="rtoggle" value="outdoors" />
+				<label for="outdoors-v11">outdoors</label>
+				<input id="satellite-v9" type="radio" name="rtoggle" value="outdoors" />
+				<label for="satellite-v9">satellite</label>
+			</div>
+		</div>
+
+
+	</div>
+
+	<script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+
+	<script type="importmap">
+		{
+		  "imports": {
+			"three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+			"three/examples/jsm/loaders/3DMLoader": "https://unpkg.com/three@0.158.0/examples/jsm/loaders/3DMLoader.js",
+			"rhino3dm":"https://unpkg.com/rhino3dm@8.0.0-beta3/rhino3dm.module.js"
+		  }
+		}
+	</script>
+
+	<script>
+		function updateSliderValue(id, value, slider) {
+			var currentValueSpan = document.getElementById(id);
+			currentValueSpan.textContent = "Current: " + value;
+			currentValueSpan.style.left = "calc(70% * " + value + " / " + slider.max + ")";
+		}
+	</script>
+
+	<script type="module" src="./script.js"></script>
+	</script>
+</body>

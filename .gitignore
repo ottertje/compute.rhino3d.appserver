@@ -1,3 +1,8 @@
 ﻿node_modules
 .vscode/*
 !.vscode/launch.json
+*.gh
+src/examples/thesis/BIGgltfNew.gltf
+src/examples/thesis/BIGgltf.bin
+src/examples/thesisFloor/BIGgltfNew.gltf
+src/examples/thesisFloor/BIGgltf.bin

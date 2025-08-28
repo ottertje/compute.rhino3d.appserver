@@ -1,0 +1,476 @@
+1,01.Mid.010,1st floor
+3,01.Mid.100,1st floor
+4,01.Mid.801,1st floor
+5,01.Mid.802,1st floor
+6,01.Mid.803,1st floor
+7,01.Mid.804,1st floor
+8,01.Mid.851,1st floor
+9,01.Mid.853,1st floor
+10,01.Mid.854,1st floor
+11,01.Mid.855,1st floor
+12,01.Oost.010,1st floor
+13,01.Oost.050,1st floor
+14,01.Oost.110,1st floor
+15,01.Oost.150,1st floor
+16,01.Oost.170,1st floor
+17,01.Oost.180,1st floor
+18,01.Oost.190,1st floor
+19,01.Oost.240,1st floor
+20,01.Oost.310,1st floor
+21,01.Oost.320,1st floor
+22,01.Oost.321,1st floor
+23,01.Oost.330,1st floor
+24,01.Oost.350,1st floor
+25,01.Oost.370,1st floor
+26,01.Oost.400,1st floor
+27,01.Oost.410,1st floor
+28,01.Oost.430,1st floor
+29,01.Oost.450,1st floor
+30,01.Oost.470,1st floor
+31,01.Oost.500,1st floor
+32,01.Oost.510,1st floor
+33,01.Oost.530,1st floor
+34,01.Oost.560,1st floor
+35,01.Oost.620,1st floor
+36,01.Oost.700,1st floor
+37,01.Oost.710,1st floor
+38,01.Oost.720,1st floor
+39,01.Oost.740,1st floor
+40,01.Oost.760,1st floor
+41,01.Oost.800,1st floor
+42,01.Oost.801,1st floor
+43,01.Oost.802,1st floor
+44,01.Oost.804,1st floor
+45,01.Oost.805,1st floor
+46,01.Oost.807,1st floor
+47,01.Oost.808,1st floor
+48,01.Oost.809,1st floor
+49,01.Oost.810,1st floor
+50,01.Oost.812,1st floor
+51,01.Oost.841,1st floor
+52,01.Oost.842,1st floor
+53,01.Oost.852,1st floor
+54,01.Oost.853,1st floor
+55,01.Oost.854,1st floor
+56,01.Oost.857,1st floor
+57,01.Oost.858,1st floor
+58,01.Oost.859,1st floor
+63,01.Oost.868,1st floor
+65,01.Oost.891,1st floor
+66,01.Oost.940,1st floor
+67,01.Oost.950,1st floor
+68,01.West.010,1st floor
+69,01.West.020,1st floor
+70,01.West.030,1st floor
+71,01.West.040,1st floor
+72,01.West.050,1st floor
+73,01.West.060,1st floor
+74,01.West.080,1st floor
+75,01.West.085,1st floor
+76,01.West.090,1st floor
+77,01.West.095,1st floor
+78,01.West.100,1st floor
+79,01.West.105,1st floor
+80,01.West.110,1st floor
+81,01.West.120,1st floor
+82,01.West.130,1st floor
+83,01.West.150,1st floor
+84,01.West.160,1st floor
+85,01.West.170,1st floor
+86,01.West.200,1st floor
+87,01.West.230,1st floor
+88,01.West.250,1st floor
+89,01.West.270,1st floor
+90,01.West.290,1st floor
+91,01.West.300,1st floor
+92,01.West.310,1st floor
+93,01.West.320,1st floor
+94,01.West.321,1st floor
+95,01.West.350,1st floor
+96,01.West.360,1st floor
+97,01.West.370,1st floor
+98,01.West.430,1st floor
+99,01.West.501,1st floor
+100,01.West.510,1st floor
+101,01.West.520,1st floor
+102,01.West.530,1st floor
+103,01.West.540,1st floor
+104,01.West.550,1st floor
+105,01.West.600,1st floor
+106,01.West.610,1st floor
+107,01.West.620,1st floor
+108,01.West.630,1st floor
+109,01.West.640,1st floor
+110,01.West.650,1st floor
+111,01.West.670,1st floor
+112,01.West.690,1st floor
+113,01.West.700,1st floor
+114,01.West.710,1st floor
+115,01.West.720,1st floor
+116,01.West.730,1st floor
+117,01.West.740,1st floor
+118,01.West.750,1st floor
+119,01.West.760,1st floor
+120,01.West.770,1st floor
+121,01.West.771,1st floor
+122,01.West.780,1st floor
+123,01.West.790,1st floor
+124,01.West.800,1st floor
+125,01.West.801,1st floor
+126,01.West.802,1st floor
+127,01.West.803,1st floor
+128,01.West.804,1st floor
+129,01.West.806,1st floor
+130,01.West.807,1st floor
+131,01.West.808,1st floor
+132,01.West.812,1st floor
+133,01.West.813,1st floor
+134,01.West.815,1st floor
+135,01.West.817,1st floor
+138,01.West.852,1st floor
+139,01.West.853,1st floor
+140,01.West.854,1st floor
+141,01.West.856,1st floor
+142,01.West.857,1st floor
+143,01.West.858,1st floor
+144,01.West.859,1st floor
+145,01.West.861,1st floor
+146,01.West.862,1st floor
+147,01.West.863,1st floor
+148,01.West.866,1st floor
+149,01.west.867,1st floor
+150,01+.Mid.010,1st floor +
+151,01+.Mid.020,1st floor +
+152,01+.Mid.030,1st floor +
+153,01+.Mid.070,1st floor +
+154,01+.Mid.801,1st floor +
+155,01+.Mid.802,1st floor +
+157,01+.Mid.853,1st floor +
+159,01+.Mid.855,1st floor +
+160,01+.Oost.180,1st floor +
+161,01+.Oost.700,1st floor +
+162,01+.Oost.710,1st floor +
+163,01+.Oost.730,1st floor +
+164,01+.Oost.760,1st floor +
+166,01+.Oost.810,1st floor +
+169,01+.Oost.860,1st floor +
+173,01+.West.010,1st floor +
+174,01+.West.020,1st floor +
+175,01+.West.030,1st floor +
+176,01+.West.040,1st floor +
+177,01+.West.041,1st floor +
+178,01+.West.100,1st floor +
+179,01+.West.110,1st floor +
+180,01+.West.120,1st floor +
+181,01+.West.130,1st floor +
+182,01+.West.140,1st floor +
+183,01+.West.150,1st floor +
+184,01+.West.180,1st floor +
+185,01+.West.200,1st floor +
+186,01+.West.210,1st floor +
+187,01+.West.220,1st floor +
+188,01+.West.230,1st floor +
+189,01+.West.240,1st floor +
+190,01+.West.250,1st floor +
+191,01+.West.300,1st floor +
+192,01+.West.320,1st floor +
+193,01+.West.370,1st floor +
+194,01+.West.410,1st floor +
+195,01+.West.550,1st floor +
+196,01+.West.610,1st floor +
+197,01+.West.630,1st floor +
+198,01+.West.650,1st floor +
+199,01+.West.670,1st floor +
+200,01+.West.690,1st floor +
+201,01+.West.801,1st floor +
+202,01+.West.802,1st floor +
+203,01+.West.803,1st floor +
+204,01+.West.804,1st floor +
+206,01+.West.850,1st floor +
+213,01+.West.866,1st floor +
+215,02.Mid.010,2nd
+216,02.Mid.040,2nd
+217,02.Mid.050,2nd
+218,02.Mid.100,2nd
+219,02.Mid.110,2nd
+223,02.Oost.010,2nd
+224,02.Oost.170,2nd
+225,02.Oost.180,2nd
+226,02.Oost.200,2nd
+227,02.Oost.240,2nd
+228,02.Oost.300,2nd
+229,02.Oost.310,2nd
+230,02.Oost.321,2nd
+231,02.Oost.370,2nd
+232,02.Oost.380,2nd
+233,02.Oost.400,2nd
+234,02.Oost.470,2nd
+235,02.Oost.500,2nd
+236,02.Oost.510,2nd
+237,02.Oost.530,2nd
+238,02.Oost.600,2nd
+239,02.Oost.700,2nd
+240,02.Oost.801,2nd
+241,02.Oost.804,2nd
+243,02.Oost.854,2nd
+244,02.Oost.859,2nd
+245,02.West.010,2nd
+246,02.West.030,2nd
+247,02.West.040,2nd
+248,02.West.050,2nd
+249,02.West.060,2nd
+250,02.West.090,2nd
+251,02.West.100,2nd
+252,02.West.110,2nd
+253,02.West.130,2nd
+254,02.West.200,2nd
+255,02.West.300,2nd
+256,02.West.320,2nd
+257,02.West.350,2nd
+258,02.West.380,2nd
+259,02.West.430,2nd
+260,02.West.500,2nd
+261,02.West.550,2nd
+262,02.West.560,2nd
+263,02.West.600,2nd
+264,02.West.610,2nd
+265,02.West.630,2nd
+266,02.West.650,2nd
+267,02.West.700,2nd
+268,02.West.800,2nd
+269,02.West.802,2nd
+270,02.West.806,2nd
+271,02.West.808,2nd
+272,02.West.852,2nd
+273,02.West.854,2nd
+274,02.West.859,2nd
+275,02.West.863,2nd
+291,BG.Mid.010,BG
+292,BG.Mid.020,BG
+293,BG.Mid.030,BG
+294,BG.Mid.050,BG
+295,BG.Mid.060,BG
+296,BG.Mid.080,BG
+297,BG.Mid.110,BG
+298,BG.Mid.120,BG
+299,BG.Mid.130,BG
+300,BG.Mid.140,BG
+301,BG.Mid.801,BG
+302,BG.Mid.802,BG
+303,BG.Mid.803,BG
+304,BG.Mid.804,BG
+305,BG.Mid.852,BG
+306,BG.Mid.853,BG
+307,BG.Mid.856,BG
+308,BG.oost 010,BG
+309,BG.Oost 809,BG
+310,BG.Oost.010,BG
+311,BG.Oost.050,BG
+312,BG.Oost.060,BG
+313,BG.Oost.070,BG
+314,BG.Oost.080,BG
+315,BG.Oost.090,BG
+316,BG.Oost.110,BG
+317,BG.Oost.150,BG
+318,BG.Oost.170,BG
+319,BG.Oost.180,BG
+320,BG.Oost.190,BG
+321,BG.Oost.210,BG
+322,BG.Oost.220,BG
+323,BG.Oost.240,BG
+324,BG.Oost.250,BG
+325,BG.Oost.251,BG
+326,BG.Oost.310,BG
+327,BG.Oost.320,BG
+328,BG.Oost.321,BG
+329,BG.Oost.330,BG
+330,BG.Oost.350,BG
+331,BG.Oost.370,BG
+332,BG.Oost.410,BG
+333,BG.Oost.430,BG
+334,BG.Oost.450,BG
+335,BG.Oost.470,BG
+336,BG.Oost.490,BG
+337,BG.Oost.500,BG
+338,BG.Oost.510,BG
+339,BG.Oost.530,BG
+340,BG.Oost.550,BG+
+341,BG.Oost.560,BG
+342,BG.Oost.600,BG
+343,BG.Oost.620,BG
+344,BG.Oost.700,BG
+345,BG.Oost.760,BG
+346,BG.Oost.800,BG
+347,BG.Oost.801,BG
+348,BG.Oost.802,BG
+349,BG.Oost.803,BG
+350,BG.Oost.804,BG
+351,BG.Oost.805,BG
+352,BG.Oost.807,BG
+353,BG.Oost.808,BG
+354,BG.Oost.810,BG
+355,BG.Oost.812,BG
+356,BG.Oost.813,BG
+357,BG.Oost.814,BG
+359,BG.Oost.830,BG
+360,BG.Oost.842,BG
+361,BG.Oost.843,BG
+362,BG.Oost.851,BG
+363,BG.Oost.852,BG
+364,BG.Oost.853,BG
+365,BG.Oost.854,BG
+367,BG.Oost.856,BG
+368,BG.Oost.859,BG
+370,BG.Oost.862,BG
+372,BG.Oost.891,BG
+373,BG.Oost.900,BG
+374,BG.Oost.930,BG
+375,BG.Oost.940,BG
+376,BG.Oost.950,BG
+377,BG.West 501,BG
+378,BG.West.010,BG
+379,BG.West.030,BG
+380,BG.West.080,BG
+381,BG.West.090,BG
+382,BG.West.100,BG
+383,BG.West.110,BG
+384,BG.West.130,BG
+386,BG.West.150,BG
+387,BG.West.160,BG
+388,BG.West.170,BG
+389,BG.West.200,BG
+390,BG.West.201,BG
+391,BG.West.202,BG
+392,BG.West.230,BG
+393,BG.West.250,BG
+394,BG.West.270,BG
+395,BG.West.290,BG
+396,BG.West.300,BG
+398,BG.West.310,BG
+399,BG.West.320,BG
+400,BG.West.340,BG
+401,BG.West.350,BG
+402,BG.West.370,BG
+403,BG.West.380,BG
+404,BG.West.401,BG
+405,BG.West.410,BG
+406,BG.West.430,BG
+407,BG.West.500,BG
+408,BG.West.510,BG
+409,BG.West.520,BG
+410,BG.West.530,BG
+411,BG.West.540,BG
+412,BG.West.545,BG
+413,BG.West.550,BG
+414,BG.West.600,BG
+415,BG.West.610,BG
+416,BG.West.620,BG
+417,BG.West.630,BG
+418,BG.West.640,BG
+419,BG.West.650,BG
+420,BG.West.660,BG
+421,BG.West.670,BG
+423,BG.West.700,BG
+424,BG.West.710,BG
+425,BG.West.720,BG
+426,BG.West.730,BG
+427,BG.West.740,BG
+428,BG.West.750,BG
+429,BG.West.760,BG
+430,BG.West.801,BG
+431,BG.West.802,BG
+432,BG.West.803,BG
+433,BG.West.804,BG
+434,BG.West.806,BG
+435,BG.West.807,BG
+436,BG.West.808,BG
+437,BG.West.809,BG
+438,BG.West.810,BG
+439,BG.West.811,BG
+440,BG.West.812,BG
+442,BG.West.814,BG
+443,BG.West.815,BG
+444,BG.West.816,BG
+445,BG.West.817,BG
+446,BG.West.818,BG
+447,BG.West.819,BG
+449,BG.West.853,BG
+450,BG.West.854,BG
+451,BG.West.858,BG
+452,BG.West.859,BG
+453,BG.West.862,BG
+454,BG.West.863,BG
+455,BG.West.864,BG
+457,BG.West.866,BG
+458,BG.West.868,BG
+459,BG.Zuid.010,BG
+460,BG.Zuid.020,BG
+461,BG.Zuid.030,BG
+462,BG.Zuid.040,BG
+463,BG.Zuid.080,BG
+464,BG.Zuid.100,BG
+465,BG.Zuid.110,BG
+466,BG.Zuid.120,BG
+467,BG.Zuid.130,BG
+468,BG.Zuid.200,BG
+469,BG.Zuid.300,BG
+470,BG.Zuid.310,BG
+471,BG.Zuid.330,BG
+472,BG.Zuid.340,BG
+473,BG.Zuid.350,BG
+474,BG.Zuid.360,BG
+475,BG.Zuid.380,BG
+476,BG.Zuid.390,BG
+477,BG.Zuid.400,BG
+478,BG.Zuid.430,BG
+479,BG.Zuid.440,BG
+480,BG.Zuid.460,BG
+481,BG.Zuid.480,BG
+482,BG.Zuid.801,BG
+483,BG.Zuid.802,BG
+484,BG.Zuid.805,BG
+485,BG.Zuid.806,BG
+486,BG.Zuid.807,BG
+488,BG.Zuid.851,BG
+489,BG.Zuid.852,BG
+491,BG.Zuid.854,BG
+493,BG.Zuid.901,BG
+494,BG.Zuid.902,BG
+495,BG.Zuid.903,BG
+496,BG.Zuid.904,BG
+497,BG+ west 610,BG+
+498,BG+.Mid.030,BG+
+499,BG+.Mid.120,BG+
+502,BG+.Oost.010,BG+
+503,BG+.Oost.030,BG+
+504,BG+.Oost.040,BG+
+505,BG+.Oost.050,BG+
+506,BG+.Oost.060,BG+
+507,BG+.Oost.070,BG+
+508,BG+.Oost.080,BG+
+509,BG+.Oost.090,BG+
+510,BG+.Oost.160,BG+
+511,BG+.Oost.170,BG+
+512,BG+.Oost.180,BG+
+513,BG+.Oost.190,BG+
+514,BG+.Oost.210,BG+
+515,BG+.Oost.700,BG+
+516,BG+.Oost.710,BG+
+517,BG+.Oost.800,BG+
+518,BG+.Oost.801,BG+
+519,BG+.Oost.802,BG+
+521,BG+.Oost.810,BG+
+528,BG+.Oost.865,BG+
+530,BG+.West.290,BG+
+531,BG+.West.300,BG+
+532,BG+.West.310,BG+
+533,BG+.West.560,BG+
+534,BG+.West.570,BG+
+535,BG+.West.620,BG+
+536,BG+.West.630,BG+
+537,BG+.West.680,BG+
+538,BG+.West.814,BG+
+539,BG+.West.815,BG+
+540,BG+.West.816,BG+
+546,BG+.Zuid.100,BG+
+547,BG+.Zuid.200,BG+
